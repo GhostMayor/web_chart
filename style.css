@@ -1,0 +1,101 @@
+body{
+  font-size: 20px;
+  font-weight: 300;
+  color:#222222;
+  background-color: #ffffff;
+  margin:0px;
+  padding:0px;
+}
+
+.night_mode{
+  background-color: #242f3e;
+  color:#ffffff;
+}
+
+.night_mode .green{
+  color:#76d672;
+}
+
+.night_mode .red{
+  color:#f1685f;
+}
+
+.night_mode .blue{
+  color:#242f3e;
+}
+
+#showed{
+  position: absolute;
+  background: rgba(255,255,255,0.1);
+  box-shadow: inset 0px 0px 18px 1px rgba(230,230,230,0.59);
+}
+
+
+.night_mode .border{
+  border-color:#344658;
+}
+
+#chart, #chart_map, #history{
+  position: relative;
+  padding-left: 10px;
+}
+#title{
+  height: 10vh;
+}
+#chart{
+  display: block;
+}
+#window{
+  position: absolute;
+  background:rgba(0,0,0,0.2);
+}
+#chart_map{
+  height: 20vh;
+}
+#history{
+  height: 10vh;
+}
+
+#title{
+  padding-left:10px;
+  line-height: 10vh;
+  padding-right:10px;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+#switch{
+  position: absolute;
+  bottom:20px;
+  left:0px;
+  width:100%;
+  height:30px;
+  font-size: inherit;
+  font-weight: inherit;
+  margin:auto;
+  display: block;
+  border:none;
+  color:#36a8f1;
+  background: inherit;
+  text-align: center;
+}
+#switch:focus{
+  border:none;
+  outline: none;
+}
+#switch:hover{
+  cursor: pointer;
+}
+
+
+.green{
+  color:#0fbb13;
+}
+
+.red{
+  color:#f34c44;
+}
+
+.blue{
+  color:#96a2aa;
+}

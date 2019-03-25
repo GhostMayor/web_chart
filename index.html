@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Telegram Charts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class='night_mode'>
+  <div id='title'>Followers</div>
+  <canvas id='chart'>
+
+  </canvas>
+  <button id='switch'>
+
+  </button>
+  <script src='data.js'></script>
+  <script src='appVersionTwo.js'></script>
+  <script>
+    let my_chart = chart()
+    my_chart.init(document.getElementById('chart'))
+    my_chart.render(chart_data[0])
+
+    let switcher = document.getElementById('switch')
+    let toggle_switcher = true
+    switcher.innerHTML = 'Switch to Day Mode'
+    switcher.addEventListener('click', function (e) {
+      if (toggle_switcher) {
+        switcher.innerHTML = 'Switch to Night Mode'
+        my_chart.setTextColor('#212121')
+      } else {
+        switcher.innerHTML = 'Switch to Day Mode'
+        my_chart.setTextColor('#FAFAFA')
+      }
+      document.body.classList.toggle('night_mode')
+      toggle_switcher = !toggle_switcher
+    })
+  </script>
+</body>
+
+</html>
